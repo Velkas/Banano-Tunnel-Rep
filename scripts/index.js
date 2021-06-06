@@ -28,3 +28,10 @@ function openGuide(evt, guide) {
   document.getElementById(guide).style.display = 'block';
   evt.currentTarget.className += ' active';
 }
+
+function publishDate() {
+  var el = document.getElementById('date');
+
+  console.log(el.innerText);
+  el.textContent = 'c.' + new Date().getFullYear();
+}
