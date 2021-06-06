@@ -1,5 +1,5 @@
 let kaliumImgs = ['assets/kalium/green_radium_hentai.jpg', 'assets/kalium/thanos_hentai.jpg'];
-let vaultImgs = [];
+let vaultImgs = ['assets/vault/vault-placeholder.jpg'];
 
 function chooseRandomImg(pool) {
   switch (pool) {
