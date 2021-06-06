@@ -14,6 +14,16 @@ p,
   color: #ddd;
 }
 
+h3 {
+  display: inline;
+  color: #ddd;
+}
+
+#copyleft {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;

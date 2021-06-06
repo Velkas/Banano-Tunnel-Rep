@@ -33,5 +33,5 @@ function publishDate() {
   var el = document.getElementById('date');
 
   console.log(el.innerText);
-  el.textContent = 'c.' + new Date().getFullYear();
+  el.textContent = new Date().getFullYear();
 }
