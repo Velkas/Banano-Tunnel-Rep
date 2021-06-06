@@ -1,4 +1,21 @@
+let kaliumImgs = ['assets/kalium/green_radium_hentai.jpg', 'assets/kalium/thanos_hentai.jpg'];
+let vaultImgs = [];
+
+function chooseRandomImg(pool) {
+  switch (pool) {
+    case 'kalium':
+      document.getElementById(pool + 'Img').src = kaliumImgs[Math.floor(Math.random() * kaliumImgs.length)];
+      break;
+    case 'vault':
+      document.getElementById(pool + 'Img').src = vaultImgs[Math.floor(Math.random() * vaultImgs.length)];
+      break;
+    default:
+      break;
+  }
+}
+
 function openGuide(evt, guide) {
+  chooseRandomImg(guide);
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName('tabcontent');
   for (i = 0; i < tabcontent.length; i++) {
